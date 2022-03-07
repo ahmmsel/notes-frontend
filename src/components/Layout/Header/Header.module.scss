@@ -1,0 +1,21 @@
+@import "../../../utility";
+
+.header {
+  position: sticky;
+  top: 0;
+  box-shadow: $box-shadow;
+  background-color: $primary-bg;
+  padding: 1rem 0;
+  z-index: 9999;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    .logo {
+      .title {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

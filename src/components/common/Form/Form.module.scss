@@ -1,0 +1,19 @@
+@import "../../../utility";
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-radius: .8rem;
+  padding: 1.6rem;
+  .title {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+}
+
+.box {
+  background-color: $primary-bg;
+  box-shadow: $box-shadow;
+}

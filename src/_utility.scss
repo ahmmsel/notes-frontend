@@ -1,0 +1,10 @@
+$primary-bg: #383839;
+$primary-color: #f0f0f0;
+$box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+$item-color: #80444c;
+
+@mixin grid($gap, $size) {
+	display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+}

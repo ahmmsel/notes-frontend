@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+@import "./utility";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 1.6;
+  color: $primary-color;
+}
+
+body {
+  background-color: $primary-bg;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.section {
+  margin: 4rem auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  &:hover {
+    filter: brightness(80%);
+  }
+}
+
+%primary-btn {
+  background-color: $item-color;
+  color: $primary-color;
+  box-shadow: $box-shadow;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: .8rem 1.2rem;
+}
+
+.primary-btn {
+ @extend %primary-btn;
+ border-radius: .4rem;
+}
+
+.primary-btn-rounded {
+  @extend %primary-btn;
+  border-radius: 50%;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: $primary-color;
+  border: solid .1rem $primary-color;
+  border-radius: .4rem;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: .8rem 1.2rem;
+}
+
+.flat-btn {
+  background-color: transparent;
+  color: $primary-color;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.primary-input {
+  background-color: transparent;
+  border: none;
+  box-shadow: $box-shadow;
+  border-radius: .6rem;
+  padding: .85rem .95rem;
+}
+
+.secondary-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid .1rem $primary-color;
+  padding: .85rem .95rem;
+}
+
+.primary-textarea {
+  background-color: transparent;
+  border: none;
+  box-shadow: $box-shadow;
+  border-radius: .6rem;
+  padding: .85rem .95rem;
+  height: 10rem;
+  resize: none;
+}
+
